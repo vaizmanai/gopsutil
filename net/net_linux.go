@@ -15,7 +15,7 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/shirou/gopsutil/internal/common"
+	"github.com/vaizmanai/gopsutil/internal/common"
 )
 
 const ( // Conntrack Column numbers
@@ -737,7 +737,7 @@ func processInet(file string, kind netConnectionKindType, inodes map[string][]in
 	// Read the contents of the /proc file with a single read sys call.
 	// This minimizes duplicates in the returned connections
 	// For more info:
-	// https://github.com/shirou/gopsutil/pull/361
+	// https://github.com/vaizmanai/gopsutil/pull/361
 	contents, err := ioutil.ReadFile(file)
 	if err != nil {
 		return nil, err
@@ -798,7 +798,7 @@ func processUnix(file string, kind netConnectionKindType, inodes map[string][]in
 	// Read the contents of the /proc file with a single read sys call.
 	// This minimizes duplicates in the returned connections
 	// For more info:
-	// https://github.com/shirou/gopsutil/pull/361
+	// https://github.com/vaizmanai/gopsutil/pull/361
 	contents, err := ioutil.ReadFile(file)
 	if err != nil {
 		return nil, err

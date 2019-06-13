@@ -17,7 +17,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/shirou/gopsutil/internal/common"
+	"github.com/vaizmanai/gopsutil/internal/common"
 )
 
 type LSB struct {
