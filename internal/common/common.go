@@ -26,7 +26,7 @@ import (
 )
 
 var (
-	Timeout    = 5 * time.Second
+	Timeout    = 15 * time.Second
 	ErrTimeout = errors.New("command timed out")
 )
 
